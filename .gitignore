@@ -1,0 +1,2 @@
+# Ignore only the node_modules inside frontend/good_morning_frontend
+/frontend/good_morning_frontend/node_modules/
