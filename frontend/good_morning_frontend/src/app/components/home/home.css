@@ -1,0 +1,92 @@
+/* Background gradient (sun → sky) */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+
+  position: relative;
+
+  background: lightskyblue;
+  /* transition: background 1s ease; */
+  
+  /* transition: all 4.2s cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.sun {
+  width: 120px;
+  height: 120px; 
+  /* overflow: hidden; */
+  background: radial-gradient(
+    circle,
+    #fff176 0%,
+    #ffd54f 20%,
+    #ffb300 40%,
+    rgba(255, 179, 0, 0.6) 60%,
+    rgba(255, 179, 0, 0.2) 75%,
+    rgba(255, 179, 0, 0) 100%
+  );
+  border-radius: 90%;
+
+  position: absolute;
+  /* transition: all 1s ease; */
+  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+  0 0 60px rgba(255, 200, 0, 0.6),
+  0 0 120px rgba(255, 180, 0, 0.4),
+  0 0 200px rgba(255, 160, 0, 0.25),
+  0 0 280px rgba(255, 140, 0, 0.15);
+}
+
+.sun::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,200,0,0.6), transparent);
+  border-radius: 50%;
+  top: -50%;
+  left: -50%;
+  filter: blur(40px);
+}
+
+.sun {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sun.move {
+   width: 240px;
+  height: 240px; 
+  top: 10%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  /* transform: none; */
+}
+
+h1 {
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 3rem;
+  /* color: fff8e1; */
+  /* transition: all 1s ease; */
+  
+  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.moveText {
+    
+  font-size: 5rem;
+  top: 15%;
+  left: 50%;
+}
+
+.fade {
+  opacity: 0;
+}

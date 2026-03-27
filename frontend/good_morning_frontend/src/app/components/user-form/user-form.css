@@ -1,0 +1,62 @@
+.transparent-container {
+    background-color: rgba(255, 255, 255, 0); /* Adjust the alpha value for transparency */
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+
+.item {
+    margin-bottom: 15px;
+    /* padding: 20px; */
+     opacity: 0;
+    transform: translateY(120px);
+}
+
+#heading {
+    transition: 
+        opacity 5.6s ease 0.9s, 
+        transform 1.6s ease 0.6s;
+}
+
+#sub-heading {
+    transition: 
+        opacity 5.6s ease 1.2s, 
+        transform 1.6s ease 0.9s;
+}
+
+#name-field {
+    transition: 
+        opacity 5.6s ease 1.5s, 
+        transform 1.6s ease 1.2s;
+}
+
+#email-field {
+    transition: 
+        opacity 5.6s ease 1.8s, 
+        transform 1.6s ease 1.5s;
+}
+
+#phone-field {
+    transition: 
+        opacity 5.6s ease 2.1s, 
+        transform 1.6s ease 1.8s;
+}   
+
+#submit-btn {
+    transition: 
+        opacity 5.6s ease 2.4s, 
+        transform 1.6s ease 2.1s;
+}
+
+.show .item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+    

@@ -1,0 +1,19 @@
+<div class="transparent-container" [class.show]="showForm">
+    <h1 class="item" id="heading">Good Morning</h1>
+    <h2 class="item" id="sub-heading">Enter your details and your message</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group item" id="name-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" [(ngModel)]="name" name="name" required>
+        </div>
+        <div class="form-group item" id="email-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" [(ngModel)]="email" name="email" required>
+        </div>
+        <div class="form-group item" id="phone-field">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" [(ngModel)]="phone" name="phone">
+        </div>
+        <button type="submit" class="item" id="submit-btn">Submit</button>
+    </form>
+</div>

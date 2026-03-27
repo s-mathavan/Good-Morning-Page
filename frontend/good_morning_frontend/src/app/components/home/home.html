@@ -1,0 +1,12 @@
+<div class="container" (click)="moveSun()" [class.movegradient]="isMoved">
+    <div class="sun" [class.move]="isMoved"></div>
+    <h1 
+    [class.moveText]="isMoved"
+    [class.fade]="isFading">
+        {{ text }}
+    </h1>
+
+    <!-- overlay component -->
+     <app-user-form [showForm]="showForm"></app-user-form>
+     <app-user-list [showList]="showList"></app-user-list>
+</div>
