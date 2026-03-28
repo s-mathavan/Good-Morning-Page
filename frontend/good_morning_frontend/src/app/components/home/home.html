@@ -7,6 +7,6 @@
     </h1>
 
     <!-- overlay component -->
-     <app-user-form [showForm]="showForm"></app-user-form>
-     <app-user-list [showList]="showList"></app-user-list>
+     <app-user-form [showForm]="showForm" (formSubmitted)="onFormSubmit()" [style.zIndex]="showForm ? 2 : 1"></app-user-form>
+     <app-user-list [showList]="showList" [style.zIndex]="showList ? 2 : 1"></app-user-list>
 </div>

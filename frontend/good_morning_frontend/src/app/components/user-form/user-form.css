@@ -2,6 +2,13 @@
     background-color: rgba(255, 255, 255, 0); /* Adjust the alpha value for transparency */
     padding: 20px;
     border-radius: 10px;
+    /* NEW: center the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal center */
+    justify-content: center; /* vertical center */
+    min-height: 100vh;     /* take full screen height */
+
     }
 
 .form-group {
@@ -60,3 +67,52 @@
 
 
     
+/* Labels */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Text fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #4a90e2;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+/* Submit button */
+#submit-btn {
+  width: 110%;
+  padding: 12px 14px;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#submit-btn:hover {
+  background: #357ab8;
+  transform: translateY(-2px);
+}

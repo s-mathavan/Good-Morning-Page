@@ -10,20 +10,28 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Slf4j
 @RestController
 @RequestMapping("api/v1/user")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class UserDetailController {
 
     private final UserService userService;
 
     @PostMapping
-    public ResponseEntity<String> postUserDetails(@RequestBody UserDTO userDTO) {
+    public ResponseEntity<Map<String, String>> postUserDetails(@RequestBody UserDTO userDTO) {
         userService.save(userDTO);
 
         log.info("user detail : " + userDTO);
-        return ResponseEntity.ok("User Saved Successfully");
+
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "User Saved Successfully");
+
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping

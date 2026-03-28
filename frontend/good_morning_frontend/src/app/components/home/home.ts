@@ -14,15 +14,20 @@ export class Home {
   text = "Click anywhere...";
   showForm = false;
   showList = false;
+  i = 0;
 
   moveSun() {
-    this.isMoved = true;
-    this.isFading = true;
-    this.showForm = true;
+    this.i++;
+    if (this.i === 1) {
+      this.isMoved = true;
+      this.isFading = true;
+      this.showForm = true;
+    }
   }
 
-  showUserList() {
+  onFormSubmit() {
     this.showList = true;
+    this.showForm = false;
   }
 
 }
