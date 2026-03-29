@@ -54,10 +54,16 @@
         transform 1.6s ease 1.8s;
 }   
 
-#submit-btn {
+#message-field {
     transition: 
         opacity 5.6s ease 2.4s, 
         transform 1.6s ease 2.1s;
+}
+
+#submit-btn {
+    transition: 
+        opacity 5.6s ease 2.7s, 
+        transform 1.6s ease 2.3s;
 }
 
 .show .item {
@@ -79,7 +85,8 @@ label {
 /* Text fields */
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
   width: 100%;
   padding: 12px 14px;
   border: 1px solid #ccc;
@@ -91,7 +98,8 @@ input[type="tel"] {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="tel"]:focus {
+input[type="tel"]:focus,
+textarea:focus {
   border-color: #4a90e2;
   background-color: #fff;
   outline: none;

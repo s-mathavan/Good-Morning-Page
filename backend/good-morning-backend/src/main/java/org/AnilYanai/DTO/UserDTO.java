@@ -21,4 +21,6 @@ public class UserDTO {
 
     @Pattern(regexp = "\\d{10}")
     private String phoneNumber;
+
+    private String message;
 }

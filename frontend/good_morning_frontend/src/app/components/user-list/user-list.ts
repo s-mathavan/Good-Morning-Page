@@ -60,7 +60,7 @@ export class UserList implements OnInit {
   }
 
   nextPage() {
-    if (this.currentPage < this.totalPages - 1) {
+    if (this.currentPage < this.totalPages ) {
       this.currentPage++;
       this.loadUsers();
     }

@@ -16,6 +16,7 @@ export class UserForm {
   name: string = '';
   email: string = '';
   phone: string = '';
+  message: string = '';
 
   constructor(private userDetailService: UserDetailService) {}
 
@@ -23,7 +24,8 @@ export class UserForm {
     const user: UserDetails = {
       userName: this.name,
       email: this.email,
-      phoneNumber: this.phone
+      phoneNumber: this.phone,
+      message: this.message
     };
 
     this.userDetailService.saveUserDetails(user).subscribe({

@@ -24,6 +24,7 @@ public class UserService {
                 .userName(userDTO.getUserName())
                 .phoneNumber(userDTO.getPhoneNumber())
                 .email(userDTO.getEmail())
+                .message(userDTO.getMessage())
                 .build();
 
         userRepository.save(userDetails);
@@ -47,6 +48,7 @@ public class UserService {
                 .userName(userDetails.getUserName())
                 .email(userDetails.getEmail())
                 .phoneNumber(userDetails.getPhoneNumber())
+                .message(userDetails.getMessage())
                 .build();
     }
 
