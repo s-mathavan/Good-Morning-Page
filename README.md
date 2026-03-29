@@ -5,7 +5,7 @@ This project is built using:
  
 - ⚙️ Backend: Spring Boot (Java)
 - 🌐 Frontend: Angular
-- 🗄️ Database: (configured via `application.properties`)
+- 🗄️ Database: PostgreSql(configured via `application.properties`)
 
 ---
 
@@ -102,10 +102,14 @@ http://localhost:4200
 
 ## 📸 Screenshots
 
-Add screenshots here:
+Here are some sample screenshots
 
 ```
-![Home Page](./screenshots/home.png)
+![Home Page](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample1.jpeg)
+![Form Page](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample2.jpeg)
+![User List Page](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample3.jpeg)
+![Database table](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample4.jpeg)
+![Gif Demo](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/gifsample.gif)
 ```
 
 ---
