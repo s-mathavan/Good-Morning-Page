@@ -104,13 +104,13 @@ http://localhost:4200
 
 Here are some sample screenshots
 
-```
+
 ![Home Page](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample1.jpeg)
 ![Form Page](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample2.jpeg)
 ![User List Page](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample3.jpeg)
 ![Database table](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/sample4.jpeg)
 ![Gif Demo](https://raw.githubusercontent.com/s-mathavan/Good-Morning-Page/main/screenshots/gifsample.gif)
-```
+
 
 ---
 
